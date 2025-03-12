@@ -1,3 +1,17 @@
+# Program for prime
+
+num=int(input())
+if num<2:
+    print("not")
+for i in range(2,(num//2)+1):
+    if num%i==0:
+        print("not")
+        break
+else:
+    print("prime")
+
+
+
 #  Program to print the primes in the range(1,50)
 
 sum=0
@@ -82,11 +96,11 @@ for num in range(1,51):
 # method-2
 for i in range(1,51):
     sumdigit=0
-    temp=i
+    temp=i 
     while temp >0:
         # digit=temp %10
         # sumdigit+=digit
-        sumdigit+=temp%10 #combination of above to lines
+        sumdigit+=temp%10 #combination of above to lines 2
         temp//=10
     print(sumdigit)
 
@@ -115,3 +129,5 @@ print(sum)
 # 2 True 3 True 4 False 5 True 6 False 7 True 8 False 9 False 2 True 3 True 4 False 5 True 6 False 7 True 8 False 9 False 10 False 2 True 3 True 4 False 5 True 6 False 7 True 8 False 9 False 10 False 11 True 3 True 4 False 5 True 6 False 7 True 8 False 9 False 10 False 11 True 12 False 4 False 5 True 6 False 7 True 8 False 9 False 10 False 11 True 12 False 13 True 5 True 510
 
     
+
+

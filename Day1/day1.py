@@ -77,9 +77,9 @@ for i in numbers:
 print(temp)        
 for num in temp:
     if numbers.count(num)>1:
-        uni+=num+" "
+        dup+=num+" "
     else:
-        dup+=num+" "    
+        uni+=num+" "    
 print("unique values:",uni)     
 print("duplicate value:",dup)   
 
