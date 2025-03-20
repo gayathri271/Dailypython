@@ -115,3 +115,12 @@ print(second)
 # 1,2,3,4,5
 2
 
+num=[int(i) for i in input().split()]
+first,second=float("inf"),float("inf")
+for n in num:
+    if n<first:
+        second,first=first,n
+    elif n<second and n!=first:
+        second=n
+print(first)        
+print(second)

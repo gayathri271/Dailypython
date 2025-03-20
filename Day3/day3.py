@@ -93,7 +93,7 @@ for num in range(1,51):
     sum1=sum(int(digit) for digit in str(num))
     print(sum1) 
 
-# method-2
+# method-2k
 for i in range(1,51):
     sumdigit=0
     temp=i 

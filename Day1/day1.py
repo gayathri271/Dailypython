@@ -144,17 +144,25 @@ print(num1,num2)
 
 num=int(input("enter a no.of series:"))
 a,b=0,1
-i=1
-while i<=num:
+count=1
+while count<=num:
     print(a,end=" ")
     c=a+b
     a,b=b,c
-    i+=1
+    count+=1
 
 #output:
 # enter a no.of series:5
 # 0 1 1 2 3     
 
+#method-2
 
-
+num=int(input("Enter:"))
+a,b=0,1
+print(a,b,end=" ")
+for i in range(2,num):
+    c=a+b
+    a,b=b,c
+    print(c,end=" ")
+print()    
 

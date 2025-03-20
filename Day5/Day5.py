@@ -15,6 +15,8 @@ else:
     print("not")
 
 
+
+
 # Armstrong number in a given range
 num=int(input("Enter:")) #200
 for i in range(1,num+1):
