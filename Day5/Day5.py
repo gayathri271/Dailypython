@@ -63,6 +63,7 @@ print(fact)
 # Enter:6
 # 720
 
+
 # Power of a number
 
 num=int(input("Enter")) #3

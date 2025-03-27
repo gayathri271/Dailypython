@@ -91,11 +91,11 @@ print(str1.title())
 # Write a function to convert a string to a number (without using parseInt or Number).
 
 
-str1=input("Enter:")
+str1=input("Enter:") #123
 num=0
 for char in str1:
-    num=num*10+(ord(char)-ord('0'))  # Converting character to number  ord('0')=48  ord(1)=51
-print(num,type(num))    
+    num=num*10+(ord(char)-ord('0'))  # Converting character to number  ord('0')=48  ord(1)=49 
+print(num,type(num))     
 
 str1=input("Enter:")
 num1=int(str1)
@@ -128,9 +128,37 @@ for char in str1:
         count[char]=1
 for char in count:
     if count[char]>1:
-        print(f"'{char}'occurs {count[char]} times")
+        print("'{}'occurs {}times".format(char,count[char]))
+
+
+
+str1=input("Enter:") 
+d={}
+for i in str1:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+print(d)
 
 
 # Enter:hello world
 # 'l'occurs 3 times
 # 'o'occurs 2 times
+
+
+str1=input("Enter:") #aabbcc
+res=""
+count=1
+for i in range(1,len(str1)):
+    if str1[i]==str1[i-1]:
+        count+=1
+    else:
+        res+=str1[i-1]+str(count)
+        count=1
+res+=str1[-1]+str(count)     
+print(res)
+
+# Enter:aabbcc
+# a2b2c2
+

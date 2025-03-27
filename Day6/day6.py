@@ -53,6 +53,7 @@ print(*numbers)
 # Intersection of Two Arrays
 #       [1, 2, 3], [2, 3, 4]  → [2,3]
 
+
 arr1=input().split(",")
 arr2=input().split(",")
 print(arr1)
@@ -93,6 +94,43 @@ for i in range(1,rows+1):
 #    * * * 
 #   * * * * 
 #  * * * * * 
+
+rows=int(input("Enter:"))
+for i in range(1,rows+1):
+    for j in range(1,i+1):
+        if j==1 or i==j or i==rows:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")  
+    print()
+
+# Enter:5
+# * 
+# * * 
+# *   * 
+# *     * 
+# * * * * * 
+
+
+rows=int(input("Enter:"))
+for i in range(1,rows+1):
+    spaces=rows-i
+    print(" "*spaces,end=" ")
+    for j in range(1,i+1):
+        if j==1 or i==j or i==rows:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")  
+    print()
+
+# Enter:5
+#      * 
+#     * * 
+#    *   * 
+#   *     * 
+#  * * * * * 
+
+
 
 # Find Missing Number
 #        [1, 2, 4, 5]   → [3]
