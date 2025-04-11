@@ -119,7 +119,7 @@ print(num)
 #        "hello world", "l" → 3
 # Write a function that counts the occurrences of a specific character in a string.
 
-str1=input("Enter:")
+str1=input("Enter:") 
 count={}
 for char in str1:
     if char in count:
