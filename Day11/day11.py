@@ -82,7 +82,7 @@ print(res)
 # find second lowest values from array
 # input = [1, 2, 4, -1, -1, -2, -2]
 # output = [-1, -1]
-# status- not solved find lowest  value from sorting but not return expected value
+
 
 arr1=[int(i) for i in input("Enter:").split(",")] #[1,2,3,-1,-1,-2,-2]
 res=[]
@@ -112,13 +112,21 @@ for word in str2[1:]:
 print(cap)   ## "helloWorldThisIsJavascript"
 
 #method-2
-
-str1=input("Enter:")
-str2=str1.split()
-cap=''
-for word in str2:
-    cap+=word[0].upper()+word[1:]
-print(cap)  #HelloWorldThisIsJavascript
+s1=[i for i in input("Enter:").split()]
+def camelcase(s1):
+    res=""
+    for word in s1:
+        for char in range(len(word)):
+            n=word[char]
+            if char==0:
+                if n>='a' and n<='z':
+                    res+=chr(ord(n)-32)
+                else:
+                    res+=n
+            else:
+                res+=n
+    return res
+print(camelcase(s1))    
 
 # Find First Non-Repeating Character
 
@@ -133,6 +141,22 @@ for char in s1:
     if count[char]==1:
         print("first non repeating is",char)
         break
+
+#method -2
+
+s1=input("Enter:") 
+def non_repeating(s1):
+    s2={} #s:1
+    for i in s1:
+        if i not in s2:
+            s2[i]=1
+        else:
+            s2[i]+=1
+    for i in s1:
+        if s2[i]==1:
+            return i
+print(non_repeating(s1)) 
+    
 
 # output:
 # Enter:swiss

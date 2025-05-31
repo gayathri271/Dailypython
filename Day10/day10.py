@@ -92,3 +92,17 @@ for i in arr1:
     else:
         arr2+=[i]
 print(arr2)   
+
+#using functions
+
+def flated_array(arr1):
+    arr2=[]
+    for i in arr1:
+        if isinstance(i,list):
+            arr2.extend(flated_array(i))
+        else:
+            arr2+=[i]
+    return arr2
+
+arr1=[1,[2,3]],[4,[5,6],7]   
+print(flated_array(arr1))

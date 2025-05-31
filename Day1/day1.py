@@ -48,6 +48,16 @@ print(num)
 # 2  4 7 9 4 0 7 
 # ['7', '0', '4', '9', '7', '4', '2']
 
+a1= [1, 2, 3, 4, 5]  
+def reverse(x):
+    res=[]
+    for i in range(len(x)-1,-1,-1):
+        res+=[x[i]]
+    return res
+ 
+print(reverse(a1))
+
+
 
 # "Removing Duplicates from List"
 

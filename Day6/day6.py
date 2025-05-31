@@ -50,6 +50,22 @@ numbers=numbers[-k:]+numbers[:-k]
 print(*numbers)
 
 
+
+def rotate(s, k):
+    res = ""
+    for i in range(k):
+        first = s[0]            # get first character
+        s = s[1:] + first       # rotate left by 1
+    res = s
+    return res
+
+s1 = 'doselect'
+x = 2
+print(rotate(s1, x))
+
+# input:doselect
+# output:selectdo
+
 # Intersection of Two Arrays
 #       [1, 2, 3], [2, 3, 4]  → [2,3]
 
@@ -144,5 +160,5 @@ res=expectedSum-actualSum  #4
 print(res)
 
 
-1,2,3,4,6
-5
+# 1,2,3,4,6
+# 5
